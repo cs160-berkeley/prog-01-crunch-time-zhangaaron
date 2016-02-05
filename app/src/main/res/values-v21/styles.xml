@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+        <style name="AppTheme" parent="android:Theme.Material">
+            <item name="windowActionBar">false</item>
+            <item name="windowNoTitle">true</item>
+            <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+            <item name="android:statusBarColor">@android:color/transparent</item>
+        </style>
+</resources>
+
+
+<!--<resources>-->
+<!--<style name="AppTheme"-->
+    <!--parent="@android:style/Theme.Material">-->
+    <!--<item name="android:actionBarStyle">@style/AYActionBar</item>-->
+    <!--&lt;!&ndash; Main theme colors &ndash;&gt;-->
+    <!--&lt;!&ndash;   your app branding color for the app bar &ndash;&gt;-->
+    <!--<item name="android:colorPrimary">#FF6575</item>-->
+    <!--&lt;!&ndash;   darker variant for the status bar and contextual app bars &ndash;&gt;-->
+    <!--<item name="android:colorPrimaryDark">#D44251</item>-->
+    <!--&lt;!&ndash;   theme UI controls like checkboxes and text fields &ndash;&gt;-->
+    <!--<item name="android:colorAccent">#4F4F4F</item>-->
+<!--</style>-->
+<!--<style name="AYActionBar"-->
+    <!--parent="@android:style/Widget.Material.Light.ActionBar.Solid">-->
+    <!--<item name="android:layout_gravity">center</item>-->
+<!--</style>-->
+
+<!--<style name="AYSourceAgeBar">-->
+    <!--<item name="android:background">#F1AD65</item>-->
+<!--</style>-->
+
+<!--<style name="AYLinearLayout">-->
+    <!--<item name="android:background">#ffffff</item>-->
+<!--</style>-->
+
+<!--<style name="AYGridItem">-->
+    <!--&lt;!&ndash;<item name="android:background">@drawable/rounded_rectangle</item>&ndash;&gt;-->
+    <!--<item name="android:elevation">2dp</item>-->
+<!--</style>-->
+
+<!--<style name="AYGridItemText">-->
+    <!--<item name="android:textColor">#FFFFFF</item>-->
+<!--</style>-->
+<!--</resources>-->
