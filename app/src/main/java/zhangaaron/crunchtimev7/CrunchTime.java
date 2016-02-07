@@ -14,7 +14,7 @@ import java.util.List;
 
 public class CrunchTime extends AppCompatActivity {
     private static final String TAG = CrunchTime.class.getSimpleName();
-    private RecyclerView mRecyclerMain;
+    RecyclerView mRecyclerMain;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
     @Override
@@ -58,24 +58,5 @@ public class CrunchTime extends AppCompatActivity {
         mAdapter = new ExerciseDataAdapter(_list);
         mRecyclerMain.setAdapter(mAdapter);
 
-        //attach listeners
-//        for (int i = 0;i < mRecyclerMain.getChildCount();i++) {
-//            View child = mRecyclerMain.getChildAt(i);
-//            Class c = child.getClass();
-//            if (c == CardView.class) {
-//                Log.d(TAG, "Cardview class");
-//                for (int j = 0;i < child.getChildCount();j++) {
-//                    View child1 = child.getChildAt(i);
-//                    Class c1 = child.getClass();
-//                    if (c1 == EditText.class) {
-//                        Log.d(TAG, "EditText");
-//                        child1.onChangc
-//
-//
-//                    }
-//                }
-//
-//            }
-//        }
     }
 }
