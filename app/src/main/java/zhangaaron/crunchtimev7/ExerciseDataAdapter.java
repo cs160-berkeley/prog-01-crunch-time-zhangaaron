@@ -44,6 +44,7 @@ public class ExerciseDataAdapter extends RecyclerView.Adapter<ExerciseDataAdapte
         TextView exerciseName;
         TextView exerciseValue;
         ImageView exercisePhoto;
+        TextView exerciseIsReps;
 
         ExerciseViewHolder(View itemView) {
             super(itemView);
@@ -51,6 +52,7 @@ public class ExerciseDataAdapter extends RecyclerView.Adapter<ExerciseDataAdapte
             exerciseName = (TextView)itemView.findViewById(R.id.exercise_name);
             exerciseValue= (TextView)itemView.findViewById(R.id.exercise_value);
             exercisePhoto = (ImageView)itemView.findViewById(R.id.exercise_photo);
+            exerciseIsReps = (TextView)itemView.findViewById(R.id.isReps);
 //          exerciseValue.setOnFocusChangeListener(new CardListener(, this.getAdapterPosition()));
 
 
@@ -135,11 +137,16 @@ public class ExerciseDataAdapter extends RecyclerView.Adapter<ExerciseDataAdapte
     @Override
     public void onBindViewHolder(ExerciseViewHolder exerciseView, int i) {
         exerciseView.exerciseName.setText(exerciseList.get(i).name);
-        exerciseView.exerciseValue.setText(new Double(exerciseList.get(i).value).toString());
+        exerciseView.exerciseValue.setText(String.format("%.3f", exerciseList.get(i).value));
         exerciseView.exercisePhoto.setImageResource(exerciseList.get(i).photoID);
-        Log.e(TAG, String.format("Bind %d as exercise %s", i, exerciseList.get(i).name));
+        if (exerciseList.get(i).isReps) {
+            exerciseView.exerciseIsReps.setText("Reps");
+        } else {
+            exerciseView.exerciseIsReps.setText("Minutes");
+        }
+        //Log.e(TAG, String.format("Bind %d as exercise %s", i, exerciseList.get(i).name));
         exerciseView.exerciseValue.setOnFocusChangeListener(new CardListener(this, i));
-//        exerciseView.exerciseValue.addTextChangedListener(new ExerciseValueWatcher(this, i));
+        //exerciseView.exerciseValue.addTextChangedListener(new ExerciseValueWatcher(this, i));
 
     }
 

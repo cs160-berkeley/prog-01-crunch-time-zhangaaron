@@ -22,7 +22,7 @@ public class ExerciseType {
     }
     // update the value of this ExerciseType to reflect the new calories burned for the entire thing
     void updateExerciseValue(ExerciseType other) {
-        double cal = other.value * caloriePerUnit;
+        double cal = other.value * other.caloriePerUnit;
         this.value = cal / caloriePerUnit;
     }
 }

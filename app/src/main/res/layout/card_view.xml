@@ -27,7 +27,7 @@
             android:id="@+id/exercise_name"
             android:layout_toRightOf="@+id/exercise_photo"
             android:layout_alignParentTop="true"
-            android:textSize="16sp"
+            android:textSize="14sp"
             />
 
         <EditText
@@ -36,9 +36,18 @@
             android:id="@+id/exercise_value"
             android:layout_toRightOf="@+id/exercise_photo"
             android:layout_below="@+id/exercise_name"
-            android:textSize="12sp"
+            android:textSize="10sp"
             android:inputType="numberDecimal"
             />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/isReps"
+
+            android:textSize="8sp"
+            android:layout_alignEnd="@+id/exercise_value"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/exercise_value" />
 
     </RelativeLayout>
 
