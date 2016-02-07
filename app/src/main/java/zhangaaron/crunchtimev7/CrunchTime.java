@@ -2,13 +2,18 @@ package zhangaaron.crunchtimev7;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
+import android.view.View;
+import android.widget.EditText;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class CrunchTime extends AppCompatActivity {
+    private static final String TAG = CrunchTime.class.getSimpleName();
     private RecyclerView mRecyclerMain;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
@@ -54,6 +59,23 @@ public class CrunchTime extends AppCompatActivity {
         mRecyclerMain.setAdapter(mAdapter);
 
         //attach listeners
-
+//        for (int i = 0;i < mRecyclerMain.getChildCount();i++) {
+//            View child = mRecyclerMain.getChildAt(i);
+//            Class c = child.getClass();
+//            if (c == CardView.class) {
+//                Log.d(TAG, "Cardview class");
+//                for (int j = 0;i < child.getChildCount();j++) {
+//                    View child1 = child.getChildAt(i);
+//                    Class c1 = child.getClass();
+//                    if (c1 == EditText.class) {
+//                        Log.d(TAG, "EditText");
+//                        child1.onChangc
+//
+//
+//                    }
+//                }
+//
+//            }
+//        }
     }
 }
